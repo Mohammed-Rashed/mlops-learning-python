@@ -66,3 +66,27 @@ random_distance = rng.uniform(
     size=5
 )
 print("Random distances",np.round(random_distance,2))
+
+
+
+costs = np.array([15, 25, 30, 10, 20])
+
+total = np.sum(costs)
+maxCost= np.max(costs)
+minCost = np.min(costs)
+averageCost= np.mean(costs)
+
+times = np.array([12, 35, 18, 50, 24, 42])
+timeGreaterThan30 = times > 30
+print("timeGreaterThan30:",timeGreaterThan30)
+
+
+distances = np.array([2, 5, 8, 3, 10])
+times = np.array([10, 25, 40, 18, 60])
+
+timeForEveryKm= times/distances
+ordersTimeGrtherThan5= timeForEveryKm>5
+ordersGrtherThan5=distances[ordersTimeGrtherThan5]
+print("timeForEveryKm: ",np.round(timeForEveryKm,2))
+print(ordersTimeGrtherThan5)
+print(ordersGrtherThan5)
